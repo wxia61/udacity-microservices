@@ -1,2 +1,5 @@
-install:
-  - echo `hello`
+language: node_js
+node_js:
+  - "7"
+script:
+  - console.log("hello world!");
