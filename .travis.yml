@@ -1,5 +1,10 @@
 language: node_js
-node_js:
-  - "7"
+
+services:
+  - docker
+
+before_install:
+  - docker build -f udacity-c3-frontend/Dockerfile -t  wxia61/udacity-frontend .
+
 install:
-  - echo 123;
+  - docker push wxia61/udacity-frontend
