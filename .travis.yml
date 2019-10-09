@@ -8,4 +8,5 @@ before_install:
   - docker build -t wxia61/udacity-frontend .
 
 install:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push wxia61/udacity-frontend
