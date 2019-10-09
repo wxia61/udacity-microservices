@@ -14,5 +14,5 @@ before_install:
   - docker push wxia61/udacity-frontend
   - cd ..
 
-install:
-  skip
+script:
+  - echo "Done"
