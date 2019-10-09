@@ -5,7 +5,7 @@ services:
 
 before_install:
   - cd udacity-c3-frontend
-  - docker  wxia61/udacity-frontend .
+  - docker build -t wxia61/udacity-frontend .
 
 install:
   - docker push wxia61/udacity-frontend
