@@ -1,9 +1,13 @@
 language: node_js
 
+node_js:
+   - node # will use latest node
+
 services:
   - docker
 
 before_install:
+  - npm install -g --silent @angular/cli
   - cd udacity-c3-frontend
   - docker build -t wxia61/udacity-frontend .
 
